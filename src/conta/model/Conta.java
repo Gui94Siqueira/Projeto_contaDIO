@@ -1,4 +1,4 @@
-package model;
+package conta.model;
 
 public abstract class Conta {
     
@@ -66,6 +66,11 @@ public abstract class Conta {
         this.setSaldo(this.getSaldo() - valor);
         return true;
     }
+
+    public void depositar(float valor) {
+		this.setSaldo(this.getSaldo() + valor);
+	}
+	
 
     public void visualizar() {
 
